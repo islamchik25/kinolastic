@@ -945,18 +945,16 @@ footer {
   }
 }
 
+@media (max-width: 663px) {
+  .filter-content .container .posters {
+    grid-template-columns: repeat(auto-fill, 120px);
+  }
+}
+
 @media (max-width: 600px) {
   .poster-block {
     margin-right: 20px;
     max-width: 26%;
-  }
-}
-
-@media (max-width: 550px) {
-  .loader {
-    -webkit-transform: scale(0.75);
-    -ms-transform: scale(0.75);
-        transform: scale(0.75);
   }
 }
 
@@ -989,11 +987,9 @@ footer {
   }
 }
 
-@media (max-width: 440px) {
-  .loader {
-    -webkit-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-        transform: scale(0.5);
+@media (max-width: 431px) {
+  .filter-content .container .posters {
+    grid-template-columns: repeat(auto-fill, 40%);
   }
 }
 
