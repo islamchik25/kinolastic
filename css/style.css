@@ -45,6 +45,13 @@ li {
   display: flex;
 }
 
+.f-direction {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .w-flex {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -775,7 +782,7 @@ main .container .left-col {
 .filter-content .container .posters {
   display: grid;
   grid-template-columns: repeat(auto-fill, 100px);
-  grid-gap: 1em;
+  grid-gap: 0.3em;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -810,8 +817,6 @@ main .container .left-col {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-/* @import "pages"; */
 
 footer {
   position: absolute;
@@ -959,8 +964,33 @@ footer {
 }
 
 @media (max-width: 538px) {
+  main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .posters {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-gap: 0.3em;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
   .poster-block {
-    max-width: 40%;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .right-col {
+    margin: 0;
+    width: 100%;
+    height: 100px;
   }
 }
 
@@ -989,15 +1019,21 @@ footer {
 
 @media (max-width: 431px) {
   .filter-content .container .posters {
-    grid-template-columns: repeat(auto-fill, 40%);
+    grid-template-columns: repeat(auto-fill, 100px);
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    margin-top: 30px;
+  }
+
+  .banner {
+    margin-top: 30px;
   }
 }
 
 @media (max-width: 411px) {
-  .poster-block {
-    margin-right: 10px;
-  }
-
   .format-quality li {
     padding: 3px;
     font-size: 6px;
@@ -1007,24 +1043,6 @@ footer {
 @media (max-width: 364px) {
   .container {
     padding: 0 10px;
-  }
-
-  main .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .poster-block {
-    max-width: 45%;
-    margin-right: 5%;
-  }
-
-  .right-col {
-    margin: 0;
-    width: 100%;
-    height: 100px;
   }
 }
 

@@ -61,7 +61,7 @@ $(".header-slider").slick({
   arrows: false,
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   touchThreshold: 10,
   autoplaySpeed: 3000,
   pauseOnHover: true,
