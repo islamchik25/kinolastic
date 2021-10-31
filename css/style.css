@@ -425,10 +425,25 @@ nav .logo img {
 }
 
 .header-mobi-icon_menu {
+  position: relative;
+  z-index: 1012;
   font-size: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-mobi_menu {
+  width: 80%;
+  height: 100vh;
+  background: #262626;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  z-index: 1010;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .header-content {
@@ -930,6 +945,10 @@ footer {
   }
 
   .header-mobi-icon_menu {
+    display: block;
+  }
+
+  .header-mobi_menu {
     display: block;
   }
 

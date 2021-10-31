@@ -57,6 +57,16 @@ document.body.onload = function () {
  }
 
 
+$(".header-mobi-icon_menu").click(function () { 
+    if ($(this).hasClass("active")) {
+      $(".header-mobi_menu").css("right", "-100%");
+      $(this).removeClass("active");
+    } else {
+      $(".header-mobi_menu").css("right", "0%");
+      $(this).addClass("active");
+    }
+ })
+
 $(".header-slider").slick({
   arrows: false,
   slidesToShow: 4,
