@@ -198,4 +198,43 @@ $(".slider_bg-img").slick({
   fade: true,
 });
 
-$(".posters").slick()
+$(".posters").slick({
+  responsive: [
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 919,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 744,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 512,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 392,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+  ]
+})

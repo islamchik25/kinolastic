@@ -1026,7 +1026,7 @@ footer {
 }
 
 @media (max-width: 1000px) {
-  .header_menu {
+  .header_menu .menu {
     display: none;
   }
 
@@ -1046,11 +1046,21 @@ footer {
   }
 }
 
-@media (max-width: 512px) {
+@media (max-width: 600px) {
   .container {
     padding: 0 20px;
   }
 
+  .posters .slick-slide {
+    margin-right: 7px;
+  }
+
+  .posters {
+    padding: 0;
+  }
+}
+
+@media (max-width: 512px) {
   nav .logo {
     width: 120px;
   }

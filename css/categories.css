@@ -100,7 +100,7 @@ main {
 
 .results {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-gap: 1em;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -116,6 +116,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .filter-poster_block .categories {
@@ -203,9 +204,52 @@ main {
   border-color: white;
 }
 
+@media (max-width: 1271px) {
+  .results {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1095px) {
+  .results {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 919px) {
+  .results {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 743px) {
+  .results {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .results {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5em;
+  }
+}
+
+@media (max-width: 511px) {
+  .results {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 411px) {
   .format-quality li {
     padding: 3px;
     font-size: 6px;
+  }
+}
+
+@media (max-width: 391px) {
+  .results {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

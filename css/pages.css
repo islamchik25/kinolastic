@@ -3,8 +3,14 @@
 }
 
 .films-content {
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 30px;
 }
 
@@ -35,7 +41,7 @@
 }
 
 .banner-pages {
-  width: 30%;
+  width: 300px;
 }
 
 .banner-pages img {
