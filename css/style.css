@@ -353,7 +353,7 @@ nav {
 nav .logo {
   display: block;
   width: 100px;
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 
 nav .logo img {
@@ -573,12 +573,14 @@ nav .logo img {
 
 /* search end */
 
-.site-header_user {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* .site-header_user {
+  align-items: center;
   margin-left: 30px;
   margin-right: 23px;
+  @media (max-width: 1500px) {
+    margin-right: 10px;
+    margin-left: 15px;
+  }
 }
 
 .profile-img {
@@ -586,12 +588,22 @@ nav .logo img {
   height: 36px;
   border-radius: 50%;
   background: silver;
+
+  @media (max-width: 1500px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .user-down_btn {
   font-size: 15px;
   margin-left: 13px;
-}
+
+  @media (max-width: 1500px) {
+    font-size: 11px;
+    margin-left: 5px;
+  }
+} */
 
 .header-mobi_menu,
 .header-mobi-icon_menu {
@@ -926,12 +938,29 @@ main {
   margin-right: 5px;
 }
 
+.last-poster {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.last-poster span {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 footer {
   width: 100%;
   background: #1d1d1d;
   text-align: center;
   padding: 25px 0;
   font-size: 12px;
+}
+
+main {
+  margin-bottom: 30px;
 }
 
 .btn-up {
@@ -964,21 +993,6 @@ footer {
 @media (max-width: 1500px) {
   .menu-item {
     font-size: 13px;
-  }
-
-  .site-header_user {
-    margin-right: 10px;
-    margin-left: 15px;
-  }
-
-  .profile-img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .user-down_btn {
-    font-size: 11px;
-    margin-left: 5px;
   }
 
   .header-content {
@@ -1070,7 +1084,7 @@ footer {
   }
 
   .header-head {
-    font-size: 50px;
+    font-size: 70px;
     letter-spacing: 3px;
   }
 

@@ -204,36 +204,42 @@ $(".posters").slick({
       breakpoint: 1100,
       settings: {
         slidesToShow: 5,
+        slidesToScroll: 5,
       }
     },
     {
       breakpoint: 919,
       settings: {
         slidesToShow: 4,
+        slidesToScroll: 4,
       }
     },
     {
       breakpoint: 744,
       settings: {
         slidesToShow: 3,
+        slidesToScroll: 3,
       }
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 4,
+        slidesToScroll: 4,
       }
     },
     {
       breakpoint: 512,
       settings: {
         slidesToShow: 3,
+        slidesToScroll: 3,
       }
     },
     {
       breakpoint: 392,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 2,
       }
     },
   ]
